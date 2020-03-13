@@ -4,6 +4,8 @@ import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
 import javafx.beans.binding.StringBinding;
 import org.w3c.dom.ls.LSOutput;
 
+import java.util.Arrays;
+
 public class StringLesson {
     public static void main(String[] args) {
         //Строки - ссылочный тип даных/
@@ -73,5 +75,24 @@ public class StringLesson {
         System.out.println(sb);
         str1 = sb.toString();
         System.out.println(str1);
+
+
+        char[] charArr = {'q', 'd', 'a', 'f', 'j'};
+        String charStr = new String(charArr);
+        System.out.println(charStr);
+        byte[] bytes = charStr.getBytes();
+        System.out.println(Arrays.toString(bytes));
+        charStr = new String((bytes));
+        System.out.println(charStr);
+
+
+        //Сравнение строк
+        str1 = "Java";
+        str2 = "java";
+        System.out.println(str1.equals(str2)); // с учетом регистра
+        System.out.println(str1.equalsIgnoreCase(str2)); // без учета регистра
+
+        System.out.println((str1.compareTo(str2)));
+        System.out.println((str1.compareToIgnoreCase(str2)));
     }
 }

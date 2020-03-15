@@ -98,6 +98,12 @@ public class ArraysLesson {
         System.out.println(Arrays.deepToString(newArr2));
 
 //        https://github.com/jjd-ifmo
+
+
+
+
+        }
+
     }
 
-}
+

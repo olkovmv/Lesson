@@ -87,12 +87,42 @@ public class StringLesson {
 
 
         //Сравнение строк
-        str1 = "Java";
+        str1 = "jaVa";
         str2 = "java";
         System.out.println(str1.equals(str2)); // с учетом регистра
         System.out.println(str1.equalsIgnoreCase(str2)); // без учета регистра
 
         System.out.println((str1.compareTo(str2)));
         System.out.println((str1.compareToIgnoreCase(str2)));
+        System.out.println((str2.compareTo(str1)));
+
+        System.out.println(str1.startsWith("Ja")); //Проверка начала страны
+        System.out.println(str1.endsWith("А")); //Проверка окончания
+
+        str1= str1.toLowerCase(); //Привести к нижнему регистру
+        System.out.println(str1);
+        str1=str1.toUpperCase(); // ПРиветчи к верхнему регичтру
+        System.out.println(str1);
+
+
+
+        str1 = "                    Строка                              ";
+        System.out.println(str1);
+        System.out.println(str1.trim()); //Убирает пробелы вначале и конце
+
+
+        str1 = "    Стр    ";
+        System.out.println(str1.length());
+        System.out.println(str1.trim().length());
+
+        str1 = "Java";
+        System.out.println(str1.replace("a", "AAAAA"));
+
+        str1 = "java Junior";
+        String[] strings = str1.split("\\s");
+        System.out.println(Arrays.toString(strings));
+
+
+        //Почитать про регулярки
     }
 }

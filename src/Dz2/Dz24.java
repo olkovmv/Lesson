@@ -10,7 +10,7 @@ public class Dz24 {
        StringBuilder firstSt1 = new StringBuilder(str);
        StringBuilder firstSt2 = firstSt1.reverse();
        System.out.println(firstSt2);
-        if (firstSt1.toString().equals(firstSt2.toString())) {
+        if (firstSt2.toString().equals(str)) {
            System.out.println("Вы ввели это странное слово");
        }
         else System.out.println("Неверное слово"); return;

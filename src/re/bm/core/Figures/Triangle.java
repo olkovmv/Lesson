@@ -42,5 +42,13 @@ public class Triangle {
 
     }
 
-
+    @Override
+    public String toString() {
+        return "Triangle{" +
+                "name='" + name + '\'' +
+                ", x=" + x +
+                ", y=" + y +
+                ", z=" + z +
+                '}';
+    }
 }

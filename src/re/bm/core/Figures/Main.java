@@ -1,5 +1,7 @@
 package re.bm.core.Figures;
 
+import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
+
 import java.sql.SQLOutput;
 
 public class Main {
@@ -13,8 +15,13 @@ public class Main {
         System.out.println(circle1.dlinOcr(1));
         System.out.println(rectangle1.perim(21, 42));
 
-          triangle1.per(21,12,43);
-
         System.out.println(triangle1.toString());
+          triangle1.setZ(12);
+          triangle1.setY(11);
+          triangle1.setY(11);
+
+        System.out.println(triangle1.per(21,21,34));
+
+
     }
 }

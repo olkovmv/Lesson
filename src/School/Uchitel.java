@@ -1,6 +1,6 @@
 package School;
 
-public class Uchitel  extends Personal implements Uchit {
+public class Uchitel extends Personal implements Uchit {
     protected String prepPredmet;
 
     public String getPrepPredmet() {
@@ -21,7 +21,6 @@ public class Uchitel  extends Personal implements Uchit {
         if (anyUch.getIzPredmet().equals(prepPredmet)) {
             anyUch.polZnania();
             System.out.println("Учитель  дает знания");
-        }
-        else System.out.println("Разные предметы");
+        } else System.out.println("Разные предметы");
     }
 }

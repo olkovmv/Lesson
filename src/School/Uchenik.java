@@ -1,6 +1,6 @@
 package School;
 
-public class Uchenik extends Personal implements Uchitcia{
+public class Uchenik extends Personal implements Uchitcia {
     protected String izPredmet;
     protected int urZnan = 0;
 
@@ -29,7 +29,7 @@ public class Uchenik extends Personal implements Uchitcia{
 
     @Override
     public void polZnania() {
-        this.urZnan = getUrZnan() +1;
+        this.urZnan = getUrZnan() + 1;
         System.out.println("Ученик получает знания");
     }
 

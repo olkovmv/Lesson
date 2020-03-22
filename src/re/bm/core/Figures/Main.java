@@ -20,7 +20,7 @@ public class Main {
           triangle1.setY(11);
           triangle1.setY(11);
 
-        System.out.println(triangle1.per(21,21,34));
+        System.out.println(triangle1.per(21,2, 23));
 
 
     }

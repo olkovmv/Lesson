@@ -6,7 +6,8 @@ public class Circle {
     private double diametr;
 
     public Circle(double diametr) {
-        this.diametr = diametr;
+        if (diametr> 0 ) {
+        this.diametr = diametr;}
     }
 
     public double getDiametr() {

@@ -112,6 +112,7 @@ public class Cat {
         else System.out.println("У вашего кота осталось " + this.zdorovie + "здоровья");
 
 
+        }
+
 
     }
-}

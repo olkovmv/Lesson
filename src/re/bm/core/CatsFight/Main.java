@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         Cat cat1 = new Cat("Pups");
         Cat cat2 = new Cat("Buzu", 7);
-        Cat cat3 = new Cat("Ruzik",10,15);
+        Cat cat3 = new Cat("Ruzik", 10, 15);
         Cat cat4 = new Cat(10, "Blo");
         Cat cat5 = new Cat(10, "Blo", "Komendanskii 51");
         cat1.setZdorovie(25);
@@ -19,9 +19,10 @@ public class Main {
         cat5.setSilaUd(12);
 
         cat1.fight(cat5);
+        cat5.fight(cat3);
 
 
-        System.out.println(cat5.toString());
+
 
     }
 }

@@ -1,21 +1,45 @@
 package School;
 
+import java.awt.geom.AffineTransform;
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
+        Uchitel uchitel = new Uchitel();
+        uchitel.setPrepPredmet("Математика");
+        uchitel.setVozrast(44);
+        uchitel.setName("Варвара");
+        uchitel.setPrepPredmet("История");
+        uchitel.setVozrast(55);
+        uchitel.setName("Федоровна");
+        uchitel.setPrepPredmet("Геометрия");
+        uchitel.setVozrast(66);
+        uchitel.setName("Мария");
+        Uchenik uchenik = new Uchenik();
+        uchenik.setUrZnan(12);
+        uchenik.setIzPredmet("Математика");
+        uchenik.setVozrast(12);
+        uchenik.setName("Петя");
 
 
-        Uchitel uchitel = new Uchitel("Maria", 54, "Math");
-        Uchenik uchenik1 = new Uchenik("Gosha", 12, "Geogr", 0);
-        Uchenik uchenik2 = new Uchenik("Boris", 11, "Math", 2);
-        Director director = new Director("Владислав Петровтич", 77);
+        uchenik.setUrZnan(0);
+        uchenik.setIzPredmet("История");
+        uchenik.setVozrast(12);
+        uchenik.setName("Саша");
+
+        uchenik.setUrZnan(0);
+        uchenik.setIzPredmet("Алгебра");
+        uchenik.setVozrast(12);
+        uchenik.setName("Ваня");
+
+        Director director = new Director("Владимир петрович", 88);
         School school = new School();
-        uchitel.uchitKogo(uchenik1);
-        uchitel.uchitKogo(uchenik2);
-        System.out.println(uchenik1.toString());
-        System.out.println(uchenik2.toString());
-        uchitel.uchitKogo(uchenik1);
-        uchitel.uchitKogo(uchenik2);
-        System.out.println(uchenik1.toString());
-        System.out.println(uchenik2.toString());
+        school.adUchenik(uchenik);
+        school.adUchitel(uchitel);
+
+
+
+
     }
 }

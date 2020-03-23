@@ -1,7 +1,8 @@
 package School;
 
 public class Uchitel extends Personal implements Uchit {
-    protected String prepPredmet;
+    private String prepPredmet;
+
 
     public String getPrepPredmet() {
         return prepPredmet;
@@ -16,11 +17,23 @@ public class Uchitel extends Personal implements Uchit {
         setPrepPredmet(prepPredmet);
     }
 
+    public Uchitel() {
+        super();
+
+    };
+
+
     @Override
     public void uchitKogo(Uchenik anyUch) {
         if (anyUch.getIzPredmet().equals(prepPredmet)) {
             anyUch.polZnania();
             System.out.println("Учитель  дает знания");
         } else System.out.println("Разные предметы");
+    }
+
+    @Override
+    public void setVozrast(int vozrast) {
+        if ( vozrast > 32){
+        super.setVozrast(vozrast); }
     }
 }

@@ -6,11 +6,11 @@ public class Director extends Personal {
         super(name, vozrast);
     }
 
-    protected void obiaNachZan() {
+    public void obiaNachZan() {
         System.out.println("Директор объявляет начало занятий");
     }
 
-    protected void obiaOkonZan() {
+    public void obiaOkonZan() {
         System.out.println("Директор объявляет окончание занятий");
     }
 

@@ -4,6 +4,10 @@ public class Uchenik extends Personal implements Uchitcia {
     protected String izPredmet;
     protected int urZnan = 0;
 
+    public Uchenik() {
+        super();
+    }
+
 
     public String getIzPredmet() {
         return izPredmet;

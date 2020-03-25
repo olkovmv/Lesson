@@ -39,12 +39,7 @@ public class Farmer {
     }
 
     private void animalAway(WildAnimals[] animals) {   ///Короче надо дома обдумать как прогнаиь это животное рандомом
-        WildAnimals animals1 = animals[];
-        for (int i = 0; i < animals.length; i++) {
-            if () {
-                resources += animals[i].getWeight();
-            }
-        }
+//        WildAnimals animals1 = animals[];
         System.out.println("Прогоняет дикое животное, которое пришло на ферму");
     }
 

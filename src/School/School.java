@@ -1,22 +1,14 @@
 package School;
 
-import re.bm.core.lesson6.Book;
-
 import java.util.Arrays;
 
 public class School {
-    private final String nazvanie;
+    private final String nazvanie = "Школа";
     private Director director;
     private Uchenik[] ucheniks = new Uchenik[3];
     private Uchitel[] uchitels = new Uchitel[3];
 
-    public School(String nazvanie, Director director) {
-        this.nazvanie = nazvanie;
-        this.director = director;
-    }
-
     public School() {
-
     }
 
     protected void dayInSChool() {

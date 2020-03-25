@@ -19,12 +19,12 @@ public class WildAnimals extends Animal {
         if(force>0){ this.force = force;}
     }
 
-    private void animalAttac(){
+    private void animalAttac(PetAnimal pet){
 
         System.out.println("Дикое животное напало на домашнее");
-        if (PetAnimal.speed > WildAnimals.speed ) {
+        if (pet.getSpeed()> this.getSpeed()) {
             System.out.println("Домашнее животное убегает от дикого");
-        } else if(PetAnimal.speed < WildAnimals.speed && PetAnimal.health > 0) {
+        } else if(pet.getSpeed() < this.getSpeed() && pet.getHealth() > 0) {
             System.out.println("Домашнее животное ранено, но не убито");
         } else {System.out.println("Домашнее животное сдохло");}
     }

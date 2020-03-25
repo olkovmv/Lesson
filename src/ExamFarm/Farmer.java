@@ -48,7 +48,9 @@ public class Farmer {
         System.out.println("Прогоняет дикое животное, которое пришло на ферму");
     }
 
-    private void feedPet(){
+    private void feedPet(PetAnimal[] animals) {   // Короче тут надо обдумать как кормить эту скотину
+        for (int i = 0; i < animals.length; i++) {
+            }
         System.out.println("Кормит домашнее животное");
     }
 

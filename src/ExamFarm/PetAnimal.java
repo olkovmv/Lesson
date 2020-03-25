@@ -32,11 +32,17 @@ public class PetAnimal extends Animal {
 
 
 
-    private void runAway(){
+    private void runAway(WildAnimals animals){     ///Хрень какую то написал
+        if(this.getSpeed()>animals.getSpeed()){
         System.out.println("Животное убежало от дикого зверя");
     }
+        else {this.health = this.health - animals.getForce();}
 
-    private void restoresHealth(Farmer feedPet){ ////Непонял как написать - нужно обдумать
+
+
+    private void restoresHealth(){
+            if ()////Непонял как написать - нужно обдумать
+        }
         System.out.println("Животное восполнило здоровье");
     }
 

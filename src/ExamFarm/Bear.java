@@ -6,4 +6,6 @@ public class Bear extends WildAnimals {
     }
 
     public Bear() {}
+
+
 }

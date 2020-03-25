@@ -5,11 +5,19 @@ public class WildAnimals extends Animal {
 
     public WildAnimals(String name, int weight, int speed, int force) {
         super(name, weight, speed);
-        this.force = force;
+        setForce(force);
     }
 
     public WildAnimals(){}
 
+
+    public int getForce() {
+        return force;
+    }
+
+    public void setForce(int force) {
+        if(force>0){ this.force = force;}
+    }
 
     private void animalAttac(){
 

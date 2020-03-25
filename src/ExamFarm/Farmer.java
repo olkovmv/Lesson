@@ -4,9 +4,16 @@ public class Farmer {
     private  int resources = 5;
 
     public Farmer(int resources) {
-        this.resources = resources;
+         setResources(resources);
     }
 
+    public int getResources() {
+        return resources;
+    }
+
+    public void setResources(int resources) {
+        this.resources = resources;
+    }
 
 
 

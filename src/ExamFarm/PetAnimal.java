@@ -5,9 +5,17 @@ public class PetAnimal extends Animal {
 
     public PetAnimal(String name, int weight, int speed, int health) {
         super(name, weight, speed);
-        this.health = health;
+        setHealth(health);
     }
     public PetAnimal(){}
+
+    public int getHealth() {
+        return health;
+    }
+
+    public void setHealth(int health) {
+        if(health> 0){this.health = health;}
+    }
 
 
 

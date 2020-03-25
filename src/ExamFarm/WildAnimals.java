@@ -8,6 +8,10 @@ public class WildAnimals extends Animal {
         setForce(force);
     }
 
+    public WildAnimals(int force) {
+        this.force = force;
+    }
+
     public WildAnimals(){}
 
 

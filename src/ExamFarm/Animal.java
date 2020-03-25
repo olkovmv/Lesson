@@ -5,13 +5,17 @@ public class Animal {
     private int weight;
     private  int speed;
 
+
     public Animal(String name, int weight, int speed) {
         setName(name);
         setWeight(weight);
         setSpeed(speed);
+
     }
 
     public Animal(){}
+
+
 
     public String getName() {
         return name;

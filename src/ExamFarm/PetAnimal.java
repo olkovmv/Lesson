@@ -2,11 +2,22 @@ package ExamFarm;
 
 public class PetAnimal extends Animal {
     private int health;
+    private  int resourrces;
 
-    public PetAnimal(String name, int weight, int speed, int health) {
+    public PetAnimal(String name, int weight, int speed, int health, int resourrces) {
         super(name, weight, speed);
-        setHealth(health);
+        this.health = health;
+        this.resourrces = resourrces;
     }
+
+    public int getResourrces() {
+        return resourrces;
+    }
+
+    public void setResourrces(int resourrces) {
+        this.resourrces = resourrces;
+    }
+
     public PetAnimal(){}
 
     public int getHealth() {

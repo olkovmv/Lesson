@@ -7,6 +7,8 @@ public class Farmer {
          setResources(resources);
     }
 
+    public Farmer(){}
+
     public int getResources() {
         return resources;
     }
@@ -18,7 +20,14 @@ public class Farmer {
 
 
 
-    private void GetResources(){
+    private void GetResources(PetAnimal[] animals){
+        for (int i = 0; i < animals.length ; i++) {
+            if(animals[i]instanceof GiveResources){
+                resources += animals[i].getResourrces();
+            }
+
+        }
+
         System.out.println("Собирает ресурсы с домашних животных, которые могут давать ресурсы");
     }
 

@@ -30,7 +30,7 @@ public class ToFahrenheit extends Celsius implements ConversionValue, Temperatur
     @Override
     public void convertValue() {
         tempFar =  getTempCel() * svoKonv1 + svoKonv2;
-        System.out.println("Температура метода Фар "+ getTempFar());
+        System.out.println("Температура метода Фар "+ getTempCel());
         System.out.println("Температура метода Фар "+ tempFar);
 
     }

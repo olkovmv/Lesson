@@ -1,5 +1,7 @@
 package Lesson14.comparing;
 
+import java.util.Comparator;
+
 public class Car {
     private String color;
     private String brand;
@@ -34,4 +36,39 @@ public class Car {
     public void setPrice(int price) {
         this.price = price;
     }
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "color='" + color + '\'' +
+                ", brand='" + brand + '\'' +
+                ", price=" + price +
+                '}';
+    }
+
 }
+
+class CarBrendComporator implements Comparator<Car>{
+
+    @Override
+    public int compare(Car o1, Car o2) {
+        return o1.getBrand().compareTo(o2.getBrand());
+    }
+}
+
+class CarPriceComporator implements Comparator<Car>{
+
+    @Override
+    public int compare(Car o1, Car o2) {
+        return Integer.compare(o1.getPrice(), o2.getPrice());
+    }
+}
+
+class CarCollordComporator implements Comparator<Car>{
+
+    @Override
+    public int compare(Car o1, Car o2) {
+        return o1.getColor().compareTo(o2.getColor());
+    }
+}
+

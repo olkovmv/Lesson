@@ -4,11 +4,13 @@ public class User {
     String fulName;
     int salary;
     Position position;
+    User users[];
 
     public User(String fulName, int salary, Position position) {
         this.fulName = fulName;
         this.salary = salary;
         this.position = position;
+
 
 
     }

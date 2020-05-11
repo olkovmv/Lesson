@@ -2,6 +2,7 @@ package EnumDz;
 
 import javafx.geometry.Pos;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
@@ -18,8 +19,10 @@ public class Main {
         System.out.println();
         System.out.println("Введите Имя");
         String symvol = scanner.nextLine();
+        //        User[] users = new User[];
 
-        
+
+
     }
 
     public void addUsers(User newUser) {

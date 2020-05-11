@@ -1,11 +1,38 @@
 package Lesson14.hw;
 
-import java.util.List;
+import java.util.*;
 
 public class MessageTask {
     public static void countEachPriority(List<Message> messageList) {
-        // TODO:  Подсчитать количество сообщений для каждого приоритела
-        //  Ответ в консоль
+            // TODO:  Подсчитать количество сообщений для каждого приоритела
+            //  Ответ в консоль
+        int low = 0, medium = 0, high = 0, urgent = 0;
+
+        Iterator<Message> messageIterator = messageList.listIterator();
+        while (messageIterator.hasNext()) {
+            if (messageIterator.next().getPriority().equals("LOW")) {
+                low++;
+            }
+            else if (messageIterator.next().getPriority().equals("MEDIUM")) {
+                medium++;
+
+            }
+            else if (messageIterator.next().getPriority().equals("HIGH")) {
+                high++;
+
+            }
+            else if (messageIterator.next().getPriority().equals("URGENT")) {
+                urgent++;
+            }
+        }
+
+        System.out.println(messageIterator.next().getCode());
+        System.out.println(medium);
+        System.out.println(high);
+        System.out.println(urgent);
+
+
+
     }
 
     public static void countEachCode(List<Message> messageList) {

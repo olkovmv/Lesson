@@ -20,7 +20,7 @@ public class LambdaAndVars {
             System.out.println("StaticInt " + statInt);
             return x+5;
 
-        }
+        };
 
     }
 }
